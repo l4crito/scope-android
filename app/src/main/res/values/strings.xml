@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Scope</string>
+    <dimen name="dim_boton">45dp</dimen>
+    <dimen name="dim_item">40dp</dimen>
+</resources>

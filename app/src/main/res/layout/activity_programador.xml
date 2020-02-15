@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGriscClaro"
+    tools:context="com.example.chritian.tesisrubus.Programador">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btnMorado"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+
+                    android:src="@drawable/morado" />
+
+                <ImageView
+                    android:id="@+id/btnRojo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/rojo" />
+
+                <ImageView
+                    android:id="@+id/btnCeleste"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/celeste" />
+
+
+                <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/colorTomate"></LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnEjecutar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|center_vertical"
+
+
+                    android:background="@drawable/ejecutar" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.81"
+            android:orientation="horizontal">
+
+
+            <GridView
+                android:id="@+id/gvPasos"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:layout_margin="10dp"
+                android:background="@drawable/forma"
+                android:fadeScrollbars="false"
+                android:numColumns="5"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:id="@+id/layCiclos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp">// Only works inside a RelativeLayout
+
+                <ImageView
+
+                    android:id="@+id/btnCiclos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ciclo" />
+
+                <TextView
+                    android:id="@+id/txtCiclos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btnCiclos"
+                    android:layout_alignLeft="@+id/btnCiclos"
+                    android:layout_alignRight="@+id/btnCiclos"
+                    android:layout_alignTop="@+id/btnCiclos"
+                    android:layout_margin="1dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layBotones"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/btnArriba"
+                    android:layout_width="@dimen/dim_boton"
+                    android:layout_height="@dimen/dim_boton"
+                    android:layout_gravity="center_horizontal"
+
+
+                    app:srcCompat="@drawable/arriba" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:id="@+id/btnIzquierda"
+                        android:layout_width="@dimen/dim_boton"
+                        android:layout_height="@dimen/dim_boton"
+                        android:layout_margin="10dp"
+
+                        app:srcCompat="@drawable/izquierda" />
+
+                    <ImageView
+                        android:id="@+id/btnAccion"
+                        android:layout_width="@dimen/dim_boton"
+                        android:layout_height="@dimen/dim_boton"
+
+                        android:layout_margin="10dp"
+                        app:srcCompat="@drawable/luz" />
+
+                    <ImageView
+                        android:id="@+id/btnDerecha"
+                        android:layout_width="@dimen/dim_boton"
+                        android:layout_height="@dimen/dim_boton"
+                        android:layout_margin="10dp"
+                        app:srcCompat="@drawable/derecha" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/layVoz"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btnVoz"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:background="@drawable/mic" />
+
+                <ProgressBar
+
+                    android:id="@+id/barraVoz"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+
+
+
+                     />
+
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+    </LinearLayout>
+
+
+</android.widget.LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.chritian.tesisrubus.Inicio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="@color/colorBlanco"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btnConectar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rubusoff" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scope"
+            android:layout_marginTop="20px"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnCiclo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorPrimary"
+        android:text="Programar"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_weight="0.0"
+        android:id="@+id/btnVoz"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorTomate"
+        android:text="Control por voz"
+        android:textStyle="bold" />
+
+
+</android.widget.LinearLayout>
